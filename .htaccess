@@ -1,0 +1,36 @@
+
+AddDefaultCharset utf-8
+
+RewriteEngine	on
+RewriteBase     /~i/i01
+
+# blog
+RewriteRule	^msg_([0-9]+)_([0-9]+)\.html$	bloggy.php?id=$1&page=$2
+RewriteRule	^msg_([0-9]+)\.html$		bloggy.php?id=$1
+RewriteRule	^msg_0\.html$			index.html
+RewriteRule	^pro_(.+)_([0-9]+)\.html$	bloggy.php?keywords=$1&page=$2
+RewriteRule	^pro_(.+)\.html$		bloggy.php?keywords=$1
+
+RewriteRule	^post\.html$			bloggy.php?action=post
+RewriteRule	^post_([0-9]+)\.html$		bloggy.php?action=post&id=$1
+
+# articles
+RewriteRule	^articles.html$		statics.php
+RewriteRule	^a_(.+)\.html$		statics.php?id=$1
+
+# galleries
+RewriteRule	^galleries.html$	galleries.php
+RewriteRule	^g_(.+)\.html$		galleries.php?id=$1
+
+# files
+RewriteRule	^files\.html$		files.php
+
+# statistics
+RewriteRule	^statistics\.html$	statistics.php
+
+# root
+RewriteRule	^about\.html$		a_about.html
+RewriteRule	^index_([0-9]+)\.html$  bloggy.php?keywords=fresh&page=$1
+RewriteRule	^index\.html$           bloggy.php?keywords=fresh
+RewriteRule     ^$                      bloggy.php?keywords=fresh
+

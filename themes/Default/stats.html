@@ -1,0 +1,30 @@
+<h2>Статистика с {OLDEST}</h2>
+<p>Посетителей</p>
+<ul>
+<li>за прошедшие 24 часа: {UNIQUE_TODAY} + {BOTS_TODAY} роботов;</li>
+<li>за месяц: {UNIQUE_MONTH} + {BOTS_MONTH} роботов;</li>
+<li>всего: {UNIQUE_ALL} + {BOTS_ALL} роботов.</li>
+</ul>
+
+<p>Сегодня нас посетили пользователи форума ВлГУ/Online:</p>
+<ul>
+<!-- BEGIN nick -->
+<li>{USERNAME}</li>
+<!-- END nick -->
+</ul>
+
+<p>Сегодня к нам пришли по запросам:</p>
+<ul>
+<!-- BEGIN request -->
+<li><q><a href="{HREF}">{REQUEST}</a></q></li>
+<!-- END request --> 
+</ul>
+
+<p>Сегодня к нам пришли с этих страниц:</p>
+<ul>
+<!-- BEGIN referer -->
+<li><q><a href="{HREF}">{HREF}</a></q></li>
+<!-- END referer --> 
+</ul>
+
+

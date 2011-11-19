@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+	<channel>
+		<title>Наш сайт // И(ВТ|СМ)-[21]01</title>
+		<link>http://www.vlgu.ru/i01/</link>
+		<description>Журнал нескольких групп ФИПМ ВлГУ.</description>
+		<language>ru</language>
+		<copyright>Copyright 2002-2004 kolia39@mail.ru</copyright>
+		<docs>http://backend.userland.com/rss</docs>
+		<managingEditor>kolia39@mail.ru</managingEditor>
+		<webMaster>kolia39@mail.ru</webMaster>
+		<ttl>60</ttl>
+<!-- BEGIN message -->
+		<item>
+			<title>{SUBJ}</title>
+			<link>http://vlgu.ru/i01/msg_{ID}.html</link>
+			<description>{TEXT}</description>
+		        <author>{NICK}</author>
+			<pubDate>{DATE}</pubDate>
+			<guid>http://vlgu.ru/i01/msg_{ID}.html</guid>
+		</item>
+<!-- END message -->
+	</channel>
+</rss>

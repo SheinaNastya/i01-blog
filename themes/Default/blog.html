@@ -1,0 +1,150 @@
+
+<div class="back-link">
+<!-- BEGIN mu_menu_loop -->
+<!-- BEGIN mu_row_loop -->
+<!-- BEGIN mu_entry_loop -->
+<!-- BEGIN mu_inactive -->
+<a href="{mu_url}">{mu_title}</a>&nbsp;)&nbsp;
+<!-- END mu_inactive -->
+<!-- BEGIN mu_active -->
+<a href="{mu_url}" class='hilite'><strong>{mu_title}</strong></a>&nbsp;)&nbsp;
+<!-- END mu_active -->
+<!-- END mu_entry_loop -->
+<!-- END mu_row_loop -->
+<!-- END mu_menu_loop -->
+<br/>
+<!-- BEGIN post_message -->
+<a href="post.html">написать...</a> <!-- {ID} -->
+<!-- END post_message -->
+<!-- BEGIN post_comment -->
+<a href="post_{ID}.html">комментировать...</a>
+<!-- END post_comment -->
+<!-- BEGIN uplevel -->
+^ <a href="msg_{ROOT}.html">наверх</a> ^
+<!-- END uplevel -->
+</div>
+
+<div class="back-link">
+<span style="color: red">Владимирские чаты</span> <br/>
+irc.dalnet.ru / #vladimir <br/>
+irc.vladinfo.ru / #vladimir
+</div>
+
+<div class="back-link">
+<span style="color: red">Специальное предложение для постоянных
+посетителей!</span> (действительно только до 1 января 2005) <br/>
+Теперь любой желающий может оставить здесь свое собственное сообщение или
+комментировать сообщения других пользователей!!! <br/>
+Спешите успеть! ;)
+</div>
+
+<!-- BEGIN messages -->
+<div class="messages-list">
+<!-- BEGIN message -->
+<div class="message">
+<div class="subj"><h2>{SUBJ}</h2></div>
+<div class="foot"><p>// {NICK}, {DATE}, <a href='msg_{ID}.html'>комментарии</a> ({COUNT})</p></div>
+<div class="text"><p>{TEXT}</p></div>
+</div>
+<!-- END message -->
+</div>
+<!-- END messages -->
+
+
+<!-- BEGIN comments -->
+<div class="comments-list">
+<!-- BEGIN comment -->
+<div class="level{LEVEL}">
+<div class="comment">
+<div class="subj"><p>{SUBJ}</p></div>
+<div class="text">
+<p>{TEXT}</p>
+</div>
+<div class="foot"><p><a href="msg_{ID}.html">#</a>
+{NICK}, {DATE}, 
+<a href='post_{ID}.html'>комментировать...</a></p></div>
+</div>
+</div>
+<!-- END comment -->
+</div>
+<!-- END comments -->
+
+<!-- BEGIN postform -->
+<p>Пароль только нужен для того, чтобы &quot;защитить&quot; свой ник.
+Автоматическая регистрация пока не работает. Если очень нужно, то
+обращайтесь ко мне и я вас зарегистрирую. <em>Если вы не
+зарегистрированы, вы все равно можете оставлять сообщения.</em></p>
+
+{CONTENT}
+
+<p>По полю Keywords определяется раздел, в который будет помещено сообщение.
+Если в нем ничего не указано, то оно помещается в раздел
+"неотсортированное".</p>
+
+<p>Поля со звездочками<sup>*</sup> запоняются обязательно.</p>
+
+<p>Поддерживаются теги BBCode:</p>
+<pre>
+[b]bold[/b]
+[i]italic[/i]
+[u]underline[/u]
+[s]strike[/s]
+[sub]subscript[/sub]
+[sup]superscript[/sup]
+
+http://www.server.org
+[url]http://www.server.org[/url]
+[url=http://www.server.org]server[/url]
+[url=http://www.server.org target=new]server[/url]
+
+guest@anonymous.org
+[email]guest@anonymous.org[/email]
+[email=guest@anonymous.org]mail me[/email]
+
+[img]http://www.server.org/image.jpg[/img]
+[img w=100 h=200]http://www.server.org/image.jpg[/img]
+
+[ulist]
+[*]unordered item 1
+[*]unordered item 2
+[/ulist]
+[list]
+[*]unordered item 1
+[*]unordered item 2
+[/list]
+
+[list=1]
+[*]ordered item 1
+[*]ordered item 2
+[/list]
+[list=i]
+[*]ordered item 1 type i
+[li=4]ordered item 4 type i[/li]
+[/list]
+[list=I]
+[*]ordered item 1 type I
+[/list]
+[list=a s=5]
+[li]ordered item 5 type a[/li]
+[*]ordered item 6 type a
+[/list]
+[list=A]
+[li]ordered item 1 type A[/li]
+[li=12]ordered item 12 type A[/li]
+[/list]
+
+[list=A s=3]
+[li]ordered item 1, nested list:
+    [list=I]
+    [li]nested item 1[/li]
+    [li]nested item 2[/li]
+    [/list][/li]
+[li]ordered item 2[/li]
+[/list]
+</pre>
+<!-- END postform -->
+
+<!-- BEGIN pager -->
+<p class='back-link'>{PAGER}</p>
+<!-- END pager -->
+

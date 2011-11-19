@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlmap>
+	<item
+		title='блогЪ'
+		url='index.html' />
+	<item
+		title='о сайте'
+		url='about.html' />
+	<item
+		title='чтиво'
+		url='articles.html' />
+	<item 
+		title='свалка'
+		url='files.html' />
+</urlmap>

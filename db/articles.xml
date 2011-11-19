@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlmap>
+	<item
+  		title='О сайте'
+		url='a_about.html'>
+		<item
+  			title='История этого сайта'
+			url='a_history.html' />
+	</item>
+</urlmap>
